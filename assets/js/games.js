@@ -1,5 +1,6 @@
 const main = document.querySelector("main");
 let games = [];
+console.log(window)
 
 const getGames = async () => {
     const res = await fetch("http://localhost:3000/games");

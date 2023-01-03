@@ -7,7 +7,9 @@
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 35vh;
   display: flex;
@@ -15,6 +17,15 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+  position: relative;
+}
+nav .backdrop {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 0;
+  position: absolute;
+  margin-top: -2rem;
 }
 nav a {
   color: white;
@@ -27,6 +38,7 @@ nav a {
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
+  z-index: 1;
 }
 
 .top-nav__socials {
@@ -34,6 +46,7 @@ nav a {
   flex-direction: row;
   justify-content: space-between;
   width: 12%;
+  z-index: 1;
 }
 .top-nav__socials a {
   display: block;
@@ -57,6 +70,7 @@ nav a {
   padding: 0.5rem 1rem;
   border-radius: 15px;
   border-bottom: 5px solid white;
+  z-index: 1;
 }
 
 .top-nav__login:hover {
@@ -70,6 +84,7 @@ nav a {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding: 1rem 0;
+  z-index: 1;
 }
 .main-nav ul {
   width: 80%;
@@ -89,6 +104,7 @@ nav a {
 .bottom-nav {
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 .bottom-nav input {
   padding: 0.6rem;
@@ -116,6 +132,29 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-container ul {
+  list-style-type: none;
+}
+.footer-container ul li:hover {
+  text-decoration: underline;
+}
+
+.copyright span {
+  color: white;
 }
 
 /*# sourceMappingURL=shared.css.map */
