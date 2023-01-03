@@ -1,0 +1,12 @@
+{
+    "games" : [
+        {"id": 0, "team1": "KK Partizan Mozzart bet", "team2": "AS Monaco", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/EL/bcp_monaco_m.jpg", "arena": "Štark Arena", "date" : "05.01.2023.", "time": "20:30h"},
+        {"id": 1, "team1": "KK Partizan Mozzart bet", "team2": "KK Cibona", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/ABA/bcp_cibona_m_1.jpg", "arena": "Štark Arena", "date" : "08.01.2023.", "time": "21:00h"},
+        {"id": 2, "team1": "KK Partizan Mozzart bet", "team2": "Cazoo Baskonia", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/EL/bcp_baskonia_M.jpg", "arena": "Štark Arena", "date" : "13.01.2023.", "time": "20:30h"},
+        {"id": 3, "team1": "KK Partizan Mozzart bet", "team2": "MZT Skopje Aerodrom", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/ABA/bcp_mzt_m_1.jpg", "arena": "Štark Arena", "date" : "16.01.2023.", "time": "20:30h"}
+    ],
+
+    "tickets": [
+        {"id": 0, "gameId": "0", "quantity": 100}
+    ]
+}

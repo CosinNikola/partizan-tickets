@@ -1,0 +1,63 @@
+main {
+  padding: 5rem;
+}
+
+.ticket-offer, .ticket-offer__rev {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+.ticket-offer .ticket-offer__text, .ticket-offer__rev .ticket-offer__text {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  justify-content: space-around;
+}
+
+.ticket-offer:hover, .ticket-offer__rev:hover {
+  box-shadow: 2px 2px 10px gray;
+}
+
+.ticket-offer__rev {
+  flex-direction: row-reverse;
+}
+
+.ticket-offer__text {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  justify-content: space-around;
+}
+
+.ticket-offer__img {
+  height: 15rem;
+  transition: transform ease-in-out 1.2s;
+}
+
+.ticket-offer__img:hover {
+  transform: rotateY(180deg);
+}
+
+.ticket-offer__cta {
+  width: 50%;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px gray;
+  transition: all ease-in-out 0.2s;
+}
+
+.ticket-offer__cta:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/*# sourceMappingURL=main.css.map */
