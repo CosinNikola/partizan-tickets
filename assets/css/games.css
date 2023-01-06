@@ -1,0 +1,78 @@
+main {
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.game {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 18rem;
+  box-shadow: 2px 2px 5px 4px gray;
+  margin-bottom: 16px;
+}
+.game img {
+  height: 18rem;
+  width: 100%;
+}
+.game h1 {
+  font-size: 1.1rem;
+}
+.game h2 {
+  font-size: 0.9rem;
+}
+
+.game:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.game-text {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.overlay {
+  background-color: rgb(30, 30, 30);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+.overlay button {
+  width: 50%;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.overlay button:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.shown {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=games.css.map */
