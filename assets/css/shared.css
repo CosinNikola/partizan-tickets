@@ -123,6 +123,10 @@ nav a {
   font-weight: bold;
 }
 
+main {
+  padding: 5rem;
+}
+
 footer {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;

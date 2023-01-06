@@ -80,7 +80,7 @@ const writeData = () => {
         main.innerHTML += 
         `<div class="game">
             <div class="overlay">
-                <button>Kupi kartu</button>
+                <a href="../../ticket.html"><button>Kupi kartu</button></a>
             </div>
             <img src="${checkImg(game.img)}" alt="">
             <div class="game-text">

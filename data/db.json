@@ -1,9 +1,9 @@
 {
     "basketball-games" : [
-        {"id": 0, "team1": "KK Partizan Mozzart bet", "team2": "AS Monaco", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/EL/bcp_monaco_m.jpg", "arena": "Štark Arena", "date" : "05.01.2023.", "time": "20:30h"},
-        {"id": 1, "team1": "KK Partizan Mozzart bet", "team2": "KK Cibona", "img": "", "arena": "Štark Arena", "date" : "08.01.2023.", "time": "21:00h"},
-        {"id": 2, "team1": "KK Partizan Mozzart bet", "team2": "Cazoo Baskonia", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/EL/bcp_baskonia_M.jpg", "arena": "Štark Arena", "date" : "13.01.2023.", "time": "20:30h"},
-        {"id": 3, "team1": "KK Partizan Mozzart bet", "team2": "MZT Skopje Aerodrom", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/ABA/bcp_mzt_m_1.jpg", "arena": "Štark Arena", "date" : "16.01.2023.", "time": "20:30h"}
+        {"id": 0, "team1": "KK Partizan Mozzart bet", "team2": "AS Monaco", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/EL/bcp_monaco_m.jpg", "arena": "Štark Arena", "date" : "05.01.2023.", "time": "20:30h", "desc": ""},
+        {"id": 1, "team1": "KK Partizan Mozzart bet", "team2": "KK Cibona", "img": "", "arena": "Štark Arena", "date" : "08.01.2023.", "time": "21:00h", "desc": "AdmiralBet ABA Liga 2022/2023 - 14.kolo"},
+        {"id": 2, "team1": "KK Partizan Mozzart bet", "team2": "Cazoo Baskonia", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/EL/bcp_baskonia_M.jpg", "arena": "Štark Arena", "date" : "13.01.2023.", "time": "20:30h", "desc": ""},
+        {"id": 3, "team1": "KK Partizan Mozzart bet", "team2": "MZT Skopje Aerodrom", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/ABA/bcp_mzt_m_1.jpg", "arena": "Štark Arena", "date" : "16.01.2023.", "time": "20:30h", "desc": ""}
     ],
 
     "football-games": [
@@ -29,5 +29,23 @@
 
     "tickets": [
         {"id": 0, "gameId": "0", "quantity": 100}
+    ],
+
+    "tickets-prices": [
+        {"id": 0, "category" : "basketball", "gameId": "1", "section": "Bench seats*", "price": 18000},
+        {"id": 1, "category" : "basketball", "gameId": "1", "section": "Court seats 1*", "price": 14000},
+        {"id": 2, "category" : "basketball", "gameId": "1", "section": "Court seats 2*", "price": 10000},
+        {"id": 3, "category" : "basketball", "gameId": "1", "section": "Court side 1*", "price": 8000},
+        {"id": 4, "category" : "basketball", "gameId": "1", "section": "Court side 2*", "price": 6000},
+        {"id": 5, "category" : "basketball", "gameId": "1", "section": "Premium gold", "price": 3500},
+        {"id": 6, "category" : "basketball", "gameId": "1", "section": "Premium", "price": 2500},
+        {"id": 7, "category" : "basketball", "gameId": "1", "section": "Sky box", "price": 5000},
+        {"id": 8, "category" : "basketball", "gameId": "1", "section": "Standard 1", "price": 1700},
+        {"id": 9, "category" : "basketball", "gameId": "1", "section": "Standard 2", "price": 900},
+        {"id": 10, "category" : "basketball", "gameId": "1", "section": "Superior gold", "price": 3000},
+        {"id": 11, "category" : "basketball", "gameId": "1", "section": "Superior", "price": 2000},
+        {"id": 12, "category" : "basketball", "gameId": "1", "section": "Family&friends", "price": 700},
+        {"id": 12, "category" : "basketball", "gameId": "1", "section": "Nivo 400 centar", "price": 600},
+        {"id": 12, "category" : "basketball", "gameId": "1", "section": "Nivo 400 bočno", "price": 400}
     ]
 }
