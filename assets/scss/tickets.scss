@@ -47,6 +47,19 @@ form {
     select {
         font-size: 1.2rem;
     }
+
+    .checkbox-group{
+        display:flex;
+        flex-direction: column;
+
+
+        input[type="number"] {
+            width: 40px;
+            visibility: hidden;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    }
 }
 
 .pay {

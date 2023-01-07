@@ -44,6 +44,16 @@ form input[type=submit]:hover {
 form select {
   font-size: 1.2rem;
 }
+form .checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+form .checkbox-group input[type=number] {
+  width: 40px;
+  visibility: hidden;
+  text-align: center;
+  font-size: 0.8rem;
+}
 
 .pay {
   display: flex;

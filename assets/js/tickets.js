@@ -13,23 +13,108 @@ const loadData = async () => {
     .then(res => game = res)
 }
 
+// const ticketsList = () => {
+//     const ul = document.createElement("ul");
+//     for(let ticket of tickets) {
+//         let li = document.createElement("li");
+//         li.textContent = ticket.section + ": " + ticket.price + " din."; 
+//         ul.appendChild(li);
+//     }
+//     return ul;
+// }
+
 const ticketsList = () => {
-    const ul = document.createElement("ul");
+    let listElements = "";
     for(let ticket of tickets) {
-        let li = document.createElement("li");
-        li.textContent = ticket.section + ": " + ticket.price + " din."; 
-        ul.appendChild(li);
+        listElements += `<li>${ticket.section}: ${ticket.price} din.</li>`;
     }
-    return ul;
+    return listElements;
 }
 
-const selectMenu = () => {
+// const selectMenu = () => {
+//     const select = document.createElement("select");
+//     for(let ticket of tickets) {
+//         let option = document.createElement("option");
+//         option.value = ticket.section;
+//         option.textContent = ticket.section;
+//         select.appendChild(option);
+//     }
+
+//     return select;
+// }
+
+// const selectMenu = () => {
+//     let options = "";
+//     for(let ticket of tickets) {
+//         options += `<option value=${ticket.section}>${ticket.section}</option>`;
+//     }
+//     return options;
+// }
+
+
+
+const checkboxes = () => {
+    let checkboxGroup = "";
+    let i = 0;
+    for(let ticket of tickets) {
+        checkboxGroup += `<span><input type='checkbox' class="checkbox" value=${ticket.section}/> ${ticket.section} <input type="number" id="${i}"/></span>`;
+        // document.querySelector(".checkbox")[i].addEventListener('change', () => {toggleInput(i)});
+        i++;
+    }
+    return checkboxGroup;
+}
+
+
+const toggleInput = (id) => {
+    console.log(id)
+    const field = document.getElementById(id);
+    if(field.style.visibility === "visible"){
+        field.style.visibility = "hidden";
+    }
+    else {
+        field.style.visibility = "visible";
+    }
+}
+
+const addToggle = () => {
+    let i = 0;
+    const checkboxes = document.querySelectorAll(".checkbox");
+    const checkboxesArr = [...checkboxes];
+    console.log(typeof checkboxesArr)
+    for(let checkbox of checkboxes){
+        checkbox.addEventListener("change", () => {toggleInput(checkboxesArr.indexOf(checkbox))});
+        i++;
+    }
+}
+
+// const checkboxes = () => {
+//     let i = 0;
+//     const checkboxGroup = document.createElement("div");
+//     const span = document.createElement("span");
+
+//     for(let ticket of tickets) {
+//         let checkbox = document.createElement("input");
+//         checkbox.type = "checkbox";
+//         checkbox.value = ticket.section;
+//         checkbox.id = i;
+//         span.appendChild(checkbox);
+//         checkboxGroup.appendChild(span);
+//         i++;
+//     }
+
+//     return checkboxGroup;
+// }
+
+const countPrice = () => {
     
 }
 
 await loadData();
 console.log(tickets)
 console.log(game)
+
+
+console.log(ticketsList())
 
 main.innerHTML += `
     <h1>${game.team1} - ${game.team2}</h1>
@@ -43,5 +128,17 @@ main.innerHTML += `
     <p>${game.desc}</p>
     <hr />
     <h3>CENE POJEDINAČNIH ULAZNICA ZA UTAKMICU PARTIZAN MOZZART BET - CIBONA SU:</h3>
-    ${ticketsList()}
+    <ul class="ticket-prices">${ticketsList()}</ul>
+    <h3>Odaberi kartu:</h3>
+    <form>
+    <div class="checkbox-group">
+    ${checkboxes()}
+    </div>
+    <div class="pay">
+    <h2>Cena: 9000 din</h2>
+    <input type="submit" value="Kupi">
+    </div>
+    </form>
 ` ;
+
+addToggle();
