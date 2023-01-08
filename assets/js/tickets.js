@@ -57,7 +57,7 @@ const checkboxes = () => {
     let checkboxGroup = "";
     let i = 0;
     for(let ticket of tickets) {
-        checkboxGroup += `<span><input type='checkbox' class="checkbox" value=${ticket.section}/> ${ticket.section} <input type="number" id="${i}"/></span>`;
+        checkboxGroup += `<span><input type='checkbox' class="checkbox" value=${ticket.section}/> ${ticket.section} <input type="number" id="${i}" class="quantity"/></span>`;
         // document.querySelector(".checkbox")[i].addEventListener('change', () => {toggleInput(i)});
         i++;
     }
@@ -87,6 +87,21 @@ const addToggle = () => {
     }
 }
 
+const addPriceCount = () => {
+    let i = 0;
+    const inputs = document.querySelectorAll('.quantity');
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener('change', () => {countPrice(i)});
+        
+    }
+    // inputs.forEach(input => input.addEventListener('change', () => {
+    //     countPrice(i);
+    //     i++;
+    //     }
+        // ));
+}
+
+
 // const checkboxes = () => {
 //     let i = 0;
 //     const checkboxGroup = document.createElement("div");
@@ -105,8 +120,16 @@ const addToggle = () => {
 //     return checkboxGroup;
 // }
 
-const countPrice = () => {
-    
+const countPrice = (id) => {
+    const priceDisplay = document.getElementsByClassName("total-price")[0];
+    let price = +priceDisplay.innerText;
+    const ticket = tickets[id].price;
+    // console.log(document.getElementById(id).value);
+    // console.log(ticket)
+    const quantity = document.getElementById(id).value;
+    price += ticket * quantity;
+    console.log(price)
+    priceDisplay.innerText = price;
 }
 
 await loadData();
@@ -135,10 +158,11 @@ main.innerHTML += `
     ${checkboxes()}
     </div>
     <div class="pay">
-    <h2>Cena: 9000 din</h2>
+    <h2>Cena: <span class="total-price">0</span> din</h2>
     <input type="submit" value="Kupi">
     </div>
     </form>
 ` ;
 
 addToggle();
+addPriceCount();
