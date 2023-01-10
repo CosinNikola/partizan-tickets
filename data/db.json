@@ -1,33 +1,180 @@
 {
-    "basketball-games" : [
-        {"id": 0, "team1": "KK Partizan Mozzart bet", "team2": "AS Monaco", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/EL/bcp_monaco_m.jpg", "arena": "Štark Arena", "date" : "05.01.2023.", "time": "20:30h"},
-        {"id": 1, "team1": "KK Partizan Mozzart bet", "team2": "KK Cibona", "img": "", "arena": "Štark Arena", "date" : "08.01.2023.", "time": "21:00h"},
-        {"id": 2, "team1": "KK Partizan Mozzart bet", "team2": "Cazoo Baskonia", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/EL/bcp_baskonia_M.jpg", "arena": "Štark Arena", "date" : "13.01.2023.", "time": "20:30h"},
-        {"id": 3, "team1": "KK Partizan Mozzart bet", "team2": "MZT Skopje Aerodrom", "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/ABA/bcp_mzt_m_1.jpg", "arena": "Štark Arena", "date" : "16.01.2023.", "time": "20:30h"}
-    ],
-
-    "football-games": [
-        {"id": 0, "team1": "FK Partizan", "team2": "FK Mladost GAT", "img": "", "arena": "Stadion Partizana", "date" : "11.02.2023.", "time": "17:00h"},
-        {"id": 1, "team1": "FK Partizan", "team2": "FC Sheriff Tiraspol", "img": "", "arena": "Stadion Partizana", "date" : "23.02.2023.", "time": "18:45h"},
-        {"id": 2, "team1": "FK Partizan", "team2": "FK Radnički 1923", "img": "", "arena": "Stadion Partizana", "date" : "25.02.2023.", "time": "17:00h"}
-    ],
-    "handball-games": [
-        {"id": 0, "team1": "RK Partizan", "team2": "RK Jugović", "img": "", "arena": "SC Voždovac", "date" : "12.02.2023.", "time": "18:00h"},
-        {"id": 1, "team1": "RK Partizan", "team2": "RK Samot", "img": "", "arena": "SC Voždovac", "date" : "26.02.2023.", "time": "18:00h"},
-        {"id": 2, "team1": "RK Partizan", "team2": "RK Dubočica", "img": "", "arena": "SC Voždovac", "date" : "19.03.2023.", "time": "18:00h"}
-    ],
-    "waterpolo-games": [
-        {"id": 0, "team1": "VK Partizan", "team2": "VK Crvena Zvezda", "img": "", "arena": "Sport Center Banjica", "date" : "04.02.2023.", "time": "18:00h"},
-        {"id": 1, "team1": "VK Partizan", "team2": "VK Radnički KG", "img": "", "arena": "Sport Center Banjica", "date" : "22.02.2023.", "time": "18:00h"}
-    ],
-    "volleyball-games": [
-        {"id": 0, "team1": "OK Partizan", "team2": "OK Jedinstvo S.P.", "img": "", "arena": "Sport Center Šumice", "date" : "20.01.2023.", "time": "17:00h"},
-        {"id": 1, "team1": "OK Partizan", "team2": "OK Karađorđe Topola", "img": "", "arena": "Sport Center Šumice", "date" : "27.01.2023.", "time": "17:00h"},
-        {"id": 2, "team1": "OK Partizan", "team2": "OK Spartak Ljig", "img": "", "arena": "Sport Center Šumice", "date" : "03.02.2023.", "time": "17:00h"},
-        {"id": 3, "team1": "OK Partizan", "team2": "OK Gornji Milanovac", "img": "", "arena": "Sport Center Šumice", "date" : "17.02.2023.", "time": "17:00h"}
-    ],
-
-    "tickets": [
-        {"id": 0, "gameId": "0", "quantity": 100}
-    ]
+  "basketball-games": [
+    {
+      "id": 0,
+      "team1": "KK Partizan Mozzart bet",
+      "team2": "AS Monaco",
+      "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/EL/bcp_monaco_m.jpg",
+      "arena": "Štark Arena",
+      "date": "05.01.2023.",
+      "time": "20:30h"
+    },
+    {
+      "id": 1,
+      "team1": "KK Partizan Mozzart bet",
+      "team2": "KK Cibona",
+      "img": "",
+      "arena": "Štark Arena",
+      "date": "08.01.2023.",
+      "time": "21:00h"
+    },
+    {
+      "id": 2,
+      "team1": "KK Partizan Mozzart bet",
+      "team2": "Cazoo Baskonia",
+      "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/EL/bcp_baskonia_M.jpg",
+      "arena": "Štark Arena",
+      "date": "13.01.2023.",
+      "time": "20:30h"
+    },
+    {
+      "id": 3,
+      "team1": "KK Partizan Mozzart bet",
+      "team2": "MZT Skopje Aerodrom",
+      "img": "https://admin.ticketline.rs/cms/tinymce/filemanager/source/sport/KK%20PARTIZAN/2022-2023/ABA/bcp_mzt_m_1.jpg",
+      "arena": "Štark Arena",
+      "date": "16.01.2023.",
+      "time": "20:30h"
+    }
+  ],
+  "football-games": [
+    {
+      "id": 0,
+      "team1": "FK Partizan",
+      "team2": "FK Mladost GAT",
+      "img": "",
+      "arena": "Stadion Partizana",
+      "date": "11.02.2023.",
+      "time": "17:00h"
+    },
+    {
+      "id": 1,
+      "team1": "FK Partizan",
+      "team2": "FC Sheriff Tiraspol",
+      "img": "",
+      "arena": "Stadion Partizana",
+      "date": "23.02.2023.",
+      "time": "18:45h"
+    },
+    {
+      "id": 2,
+      "team1": "FK Partizan",
+      "team2": "FK Radnički 1923",
+      "img": "",
+      "arena": "Stadion Partizana",
+      "date": "25.02.2023.",
+      "time": "17:00h"
+    }
+  ],
+  "handball-games": [
+    {
+      "id": 0,
+      "team1": "RK Partizan",
+      "team2": "RK Jugović",
+      "img": "",
+      "arena": "SC Voždovac",
+      "date": "12.02.2023.",
+      "time": "18:00h"
+    },
+    {
+      "id": 1,
+      "team1": "RK Partizan",
+      "team2": "RK Samot",
+      "img": "",
+      "arena": "SC Voždovac",
+      "date": "26.02.2023.",
+      "time": "18:00h"
+    },
+    {
+      "id": 2,
+      "team1": "RK Partizan",
+      "team2": "RK Dubočica",
+      "img": "",
+      "arena": "SC Voždovac",
+      "date": "19.03.2023.",
+      "time": "18:00h"
+    }
+  ],
+  "waterpolo-games": [
+    {
+      "id": 0,
+      "team1": "VK Partizan",
+      "team2": "VK Crvena Zvezda",
+      "img": "",
+      "arena": "Sport Center Banjica",
+      "date": "04.02.2023.",
+      "time": "18:00h"
+    },
+    {
+      "id": 1,
+      "team1": "VK Partizan",
+      "team2": "VK Radnički KG",
+      "img": "",
+      "arena": "Sport Center Banjica",
+      "date": "22.02.2023.",
+      "time": "18:00h"
+    }
+  ],
+  "volleyball-games": [
+    {
+      "id": 0,
+      "team1": "OK Partizan",
+      "team2": "OK Jedinstvo S.P.",
+      "img": "",
+      "arena": "Sport Center Šumice",
+      "date": "20.01.2023.",
+      "time": "17:00h"
+    },
+    {
+      "id": 1,
+      "team1": "OK Partizan",
+      "team2": "OK Karađorđe Topola",
+      "img": "",
+      "arena": "Sport Center Šumice",
+      "date": "27.01.2023.",
+      "time": "17:00h"
+    },
+    {
+      "id": 2,
+      "team1": "OK Partizan",
+      "team2": "OK Spartak Ljig",
+      "img": "",
+      "arena": "Sport Center Šumice",
+      "date": "03.02.2023.",
+      "time": "17:00h"
+    },
+    {
+      "id": 3,
+      "team1": "OK Partizan",
+      "team2": "OK Gornji Milanovac",
+      "img": "",
+      "arena": "Sport Center Šumice",
+      "date": "17.02.2023.",
+      "time": "17:00h"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 0,
+      "gameId": "0",
+      "quantity": 100
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 1
+    },
+    {
+      "name": "Nikola",
+      "email": "nikola.cosin123@gmail.com",
+      "password": "11111111",
+      "id": 2
+    }
+  ]
 }
