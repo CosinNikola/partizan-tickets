@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/shared.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/login.css">
-    <title>Document</title>
+    <title>Partizan-Tickets | Login</title>
 </head>
 <body>
     <nav>
@@ -38,11 +38,17 @@
     </nav>
     <main>
         <form action="" class="login-form">
+            <div class="login-form__group">
             <span>E-mail:</span>
-            <input type="email">
+            <input type="email" name="email">
+            <div class="email-error"></div>
+            </div>
+            <div class="login-form__group">
             <span>Password:</span>
-            <input type="password">
-            <input type="submit" value="Login">
+            <input type="password" name="password">
+            <div class="email-error"></div>
+            </div>
+            <input type="submit" value="Login" class="main-button">
             <span>You don't have an account? <a href="register.html">Register</a></span>
         </form>
     </main>

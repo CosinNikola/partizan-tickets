@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/shared.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/register.css">
-    <title>Document</title>
+    <title>Partizan-Tickets | Register</title>
 </head>
 <body>
     <nav>
@@ -38,19 +38,27 @@
     </nav>
     <main>
         <form class="register-form" name="register" method="post">
+            <div class="register-form__group">
             <span>Name:</span>
             <input type="text" name="name">
             <div class="name-error"></div>
+            </div>
+            <div class="register-form__group">
             <span>E-mail:</span>
             <input type="email" name="email">
             <div class="email-error"></div>
+            </div>
+            <div class="register-form__group">
             <span>Password:</span>
             <input type="password" name="password">
             <div class="password-error"></div>
-            <span>Confrim password:</span>
+            </div>
+            <div class="register-form__group">
+            <span>Confirm password:</span>
             <input type="password" name="confirm_password">
             <div class="confirm-password-error"></div>
-            <input type="submit" value="Register">
+            </div>
+            <input type="submit" value="Register" class="main-button">
             <span>You already have an account? <a href="login.html">Login</a></span>
         </form>
     </main>
