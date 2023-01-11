@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/shared.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <title>Document</title>
 </head>
 <body>
@@ -36,46 +37,22 @@
         </div>
     </nav>
     <main>
-        <div class="ticket-offer">
-            <div class="ticket-offer__text">
-                <h1>Football club Partizan</h1>
-                <p>Buy tickets for all FC Partizan games</p>
-                <a href="games-fk.html"><button class="ticket-offer__cta">See offer</button></a>
+       <form class="contact-form" method="post">
+        <h1>Contact us</h1>
+            <div class="contact-form__group">
+                <span>Name:</span>
+                <input type="text" name="fname">
             </div>
-            <img src="assets/img/fk.png" alt="" class="ticket-offer__img">
-        </div>
-        <div class="ticket-offer__rev">
-            <div class="ticket-offer__text">
-                <h1>Basketball club Partizan</h1>
-                <p>Buy tickets for all BC Partizan games</p>
-                <a href="games-kk.html"><button class="ticket-offer__cta">See offer</button></a>
+            <div class="contact-form__group">
+                <span>E-mail address:</span>
+                <input type="email" name="email">
             </div>
-            <img src="assets/img/kk.png" alt="" class="ticket-offer__img">
-        </div>
-        <div class="ticket-offer">
-            <div class="ticket-offer__text">
-                <h1>Handball club Partizan</h1>
-                <p>Buy tickets for all HC Partizan games</p>
-                <a href="games-rk.html"><button class="ticket-offer__cta">See offer</button></a>
+            <div class="contact-form__group">
+                <span>Your message:</span>
+                <textarea name="message"></textarea>
             </div>
-            <img src="assets/img/rk.png" alt="" class="ticket-offer__img">
-        </div>
-        <div class="ticket-offer__rev">
-            <div class="ticket-offer__text">
-                <h1>Waterpolo club Partizan</h1>
-                <p>Buy tickets for all WC Partizan games</p>
-                <a href="games-vk.html"><button class="ticket-offer__cta">See offer</button></a>
-            </div>
-            <img src="assets/img/vk.jpeg" alt="" class="ticket-offer__img">
-        </div>
-        <div class="ticket-offer">
-            <div class="ticket-offer__text">
-                <h1>Volleyball club Partizan</h1>
-                <p>Buy tickets for all VC Partizan games</p>
-                <a href="games-ok.html"><button class="ticket-offer__cta">See offer</button></a>
-            </div>
-            <img src="assets/img/ok.png" alt="" class="ticket-offer__img">
-        </div>
+            <input type="submit" value="Send message">
+       </form>
     </main>
     <footer>
         <div class="footer-container">    
